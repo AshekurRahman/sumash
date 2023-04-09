@@ -954,3 +954,29 @@ img {
 .filter-menu button.active {
     color: var(--primary-color);
 }
+
+/* === Preloader-CSS === */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preloader .loader {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.preloader .loader img {
+    border: none;
+    width: auto;
+    height: auto;
+}

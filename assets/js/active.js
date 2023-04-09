@@ -172,4 +172,8 @@
       $grid.isotope({ filter: filterValue });
     });
   });
+
+  $(window).on('load', function(){
+    $('.preloader').fadeOut();
+  });
 })(jQuery);
