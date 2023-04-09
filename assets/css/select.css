@@ -1,0 +1,68 @@
+.sm-select-option {
+    position: relative;
+    z-index: 1;
+    width: 200px;
+}
+
+.sm-select-option .selected-option {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-family: "outfit";
+    font-weight: 100;
+    background: url('../images/up-down-arrow.png') no-repeat scroll right 16px center / 12px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.sm-select-option .sm-select {
+    list-style: none;
+    margin: 20px 0 0 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
+    border-radius: 6px;
+    color: #6B6B6B;
+    font-family: "outfit";
+    font-weight: 100;
+    display: none;
+}
+.sm-select-option .sm-select:before {
+    content: "";
+    position: absolute;
+    right: 16px;
+    bottom: calc(100% - 6px);
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    display: block;
+}
+
+.sm-select-option .sm-select:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 100%;
+    height: 60px;
+    display: block;
+}
+
+.sm-select-option .sm-select li {
+    margin: 8px 0;
+}
+
+.sm-select-option .sm-select li a {
+    color: #6B6B6B;
+    font-family: "outfit";
+    font-weight: 100;
+}
+
+.sm-select-option .sm-select li a.active {
+    color: #118B91;
+}

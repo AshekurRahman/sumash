@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+@font-face{
+    font-family: "samsung";
+    src: url('../fonts/theme-fonts/samsung-sharpsans-regular.ttf');
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "samsung";
+    src: url('../fonts/theme-fonts/samsung-sharpsans-medium.ttf');
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: "samsung";
+    src: url('../fonts/theme-fonts/samsung-sharpsans-bold.ttf');
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: "amsterdam";
+    src: url('../fonts/theme-fonts/amsterdam.otf'),url('../fonts/theme-fonts/amsterdam.ttf');
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "bebaskai";
+    src: url('../fonts/theme-fonts/bebas-kai.ttf');
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "outfit";
+    src: url('../fonts/theme-fonts/outfit-thin.otf');
+    font-weight: 100;
+}
+
+@font-face{
+    font-family: "outfit";
+    src: url('../fonts/theme-fonts/outfit-medium.otf');
+    font-weight: 500;
+}
