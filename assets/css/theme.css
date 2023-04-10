@@ -80,6 +80,11 @@ img {
     max-width: 1210px;
 }
 
+.container {
+    --bs-gutter-x: 34px;
+    --bs-gutter-y: 34px;
+}
+
 .row.g-4 {
     --bs-gutter-x: 34px;
     --bs-gutter-y: 34px;
