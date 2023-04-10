@@ -317,7 +317,9 @@ img {
 .main-navbar {
     background-color: #404956;
     min-height: 35px;
-    position: relative;
+    position: sticky;
+    top: 0;
+    left: 0;
     z-index: 2;
 }
 
