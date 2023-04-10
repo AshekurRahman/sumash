@@ -55,6 +55,7 @@
     $('.main-navbar .nav-list.mobile-menu li a .arrow').on('click', function() {
       $(this).toggleClass('active');
       $(this).parent().siblings('.sub-menu').slideToggle();
+      return false;
     });
 
 
