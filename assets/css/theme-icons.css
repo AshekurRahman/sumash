@@ -25,6 +25,13 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+.icon-36:before {
+  content: "\e923";
+}
+
+.icon-35:before {
+  content: "\e922";
+}
   
 .icon-34:before {
   content: "\e921";

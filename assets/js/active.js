@@ -54,13 +54,13 @@
         clickable: true,
       },
       breakpoints: {
-        380: {
+        476: {
           slidesPerView: 2,
         },
         680: {
           slidesPerView: 3,
         },
-        800: {
+        992: {
           slidesPerView: 4,
         },
         1080: {
@@ -70,7 +70,7 @@
     });
 
     /*====== Trending_Product_Slider ======*/
-    var Trending_Slider_1 = new Swiper(".product-slider.slider-1 .swiper", {
+    var Product_Slider_1 = new Swiper(".product-slider.slider-1 .swiper", {
       loop: true,
       speed: 600,
       spaceBetween: 18,
@@ -82,13 +82,13 @@
         prevEl: ".product-slider.slider-1 .swiper-navigation .arrow-prev",
       },
       breakpoints: {
-        380: {
+        480: {
           slidesPerView: 2,
         },
-        680: {
+        768: {
           slidesPerView: 3,
         },
-        800: {
+        992: {
           slidesPerView: 4,
         },
         1080: {
@@ -98,7 +98,7 @@
     });
 
     /*====== Trending_Product_Slider ======*/
-    var Trending_Slider_2 = new Swiper(".product-slider.slider-2 .swiper", {
+    var Product_Slider_2 = new Swiper(".product-slider.slider-2 .swiper", {
       loop: true,
       speed: 600,
       spaceBetween: 18,
@@ -110,13 +110,13 @@
         prevEl: ".product-slider.slider-2 .swiper-navigation .arrow-prev",
       },
       breakpoints: {
-        380: {
+        480: {
           slidesPerView: 2,
         },
-        680: {
+        768: {
           slidesPerView: 3,
         },
-        800: {
+        992: {
           slidesPerView: 4,
         },
         1080: {
@@ -126,7 +126,7 @@
     });
 
     /*====== Trending_Product_Slider ======*/
-    var Trending_Slider_3 = new Swiper(".product-slider.slider-3 .swiper", {
+    var Product_Slider_3 = new Swiper(".product-slider.slider-3 .swiper", {
       loop: true,
       speed: 600,
       spaceBetween: 18,
@@ -138,13 +138,13 @@
         prevEl: ".product-slider.slider-3 .swiper-navigation .arrow-prev",
       },
       breakpoints: {
-        380: {
+        480: {
           slidesPerView: 2,
         },
-        680: {
+        768: {
           slidesPerView: 3,
         },
-        800: {
+        992: {
           slidesPerView: 4,
         },
         1080: {

@@ -1,6 +1,19 @@
 (function ($) {
   $(document).on("ready", function () {
 
+    
+    var navOffset = $('.main-navbar').offset().top;
+
+    $(window).scroll(function(){
+        var scrollPos = $(window).scrollTop();
+
+        if (scrollPos >= navOffset){
+            $('.main-navbar').addClass('sticky');
+        } else {
+            $('.main-navbar').removeClass('sticky');
+        }
+    });
+
     $(".sm-select-option").each(function () {
       var this_option = $(this);
       var selected = $(this).find(".selected-option");
@@ -25,10 +38,37 @@
         });
     });
 
+    $('.main-navbar .nav-list li:has(.sub-menu)').find('> a').append('<span class="arrow icon-9"></span>');
 
-    $('.header-navbar .nav-list li .sub-menu').parent('li').children('a').append('<span class="arrow icon-9"></span>');
+    $('.serach-toggle').on('click', function(){
+      $('.header-search').slideToggle();
+      return false;
+    });
+
+    var $navbar = $('.navbar');
+    var $navList = $('.nav-list');    
+    // Clone the nav list and add the new class
+    var $mobileMenu = $navList.clone().addClass('mobile-menu');  
+    // Append the mobile menu to the navbar
+    $navbar.append($mobileMenu);
+
+    $('.main-navbar .nav-list.mobile-menu li a .arrow').on('click', function() {
+      $(this).toggleClass('active');
+      $(this).parent().siblings('.sub-menu').slideToggle();
+    });
 
 
+    $('.action-1.menu-toggle').on('click', function(){
+      $('.main-navbar').slideToggle();
+    });
+
+
+    // clone the action-2 element
+    var $action2 = $('.header-actions .action-2').clone();
+    // create a new div and add the cloned action-2 element to it
+    var $menusActions = $('<div>').addClass('menu-actions').append($action2);
+    // append the new div to the navbar
+    $('.navbar').append($menusActions);
 
   });
 })(jQuery);
