@@ -60,6 +60,7 @@
 
     $('.action-1.menu-toggle').on('click', function(){
       $('.main-navbar').slideToggle();
+      return false;
     });
 
 
